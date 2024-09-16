@@ -1,0 +1,228 @@
+body {
+    background-color: #18191A;
+}
+
+.top {
+    height: 50px;
+    display: flex;
+}
+
+#text-logo {
+    display: flex;
+    margin-left: 80px;
+}
+
+#text-logo h1 {
+    margin-top: 0%;
+    font-size: 40px;
+}
+
+#text-logo i{
+    margin-top: 10px;
+    font-size: 30px;
+    color: white;
+}
+
+.box-mode {
+    border: 1px solid black;
+    width: 50px;
+    height: 45px;
+    background-color: white;
+    border-radius: 48%;
+    margin-top: 2px;
+    margin-left: 30px;
+}
+
+.box-mode i{
+    color: black;
+    font-size: 28px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+#search::placeholder {
+    color: #3A3B3C;
+}
+
+.box-placeholder::placeholder {
+    background-color: #3A3B3C;
+    
+}
+
+#search-box {
+    width: 400px; 
+    padding: 10px;
+    border: none;
+    border-radius: 20px; 
+    background-color: #3A3B3C; 
+    color: white; 
+    font-size: 16px; 
+    margin-top: 6px;
+    margin-left: 50px;
+}
+
+#search-box::placeholder {
+    color: #aaa; 
+}
+
+#avata {
+    color: white;
+    font-size: 30px;
+    margin-top: 8px;
+    margin-left: 300px;   
+}
+
+#avata i{
+    margin-left: 50px;
+}
+
+.middle {
+    background-color: #242526;
+    height: 50px;
+    margin-top: 5px;
+    color: white;
+    font-size: 20px;
+}
+
+.center-middle {
+    display: flex;
+    margin-left: 80px;
+}
+
+#box-choose {
+    font-size: 16px;
+    margin-right: 30px;
+    border: 1px solid #242526;
+    padding: 12px;
+    height: 24px;
+    width: 100px;
+}
+
+#box-choose a{
+    text-decoration: none;
+    color: white;
+}
+
+.text-choose span{
+    display: inline-block;
+}
+
+#box-choose:hover {
+    background-color: orange;
+}
+
+#box-choose {
+    position: relative; /* Để dropdown có thể căn chỉnh chính xác theo vị trí của box-choose */
+}
+
+#box-choose:hover .dropdown {
+    display: grid; /* Hiển thị dropdown dưới dạng grid khi hover vào box-choose */
+    grid-template-columns: repeat(5, 1fr); /* Chia thành 5 cột */
+}
+
+#box-choose:hover .dropdown {
+    display: grid; /* Hiển thị dropdown dưới dạng grid khi hover vào box-choose */
+    grid-template-columns: repeat(8, 1fr); /* Chia thành 5 cột */
+}
+
+.dropdown {
+    display: none; /* Ẩn dropdown theo mặc định */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    border: 1px solid white;
+    list-style: none;
+    padding: 0;
+    margin-top: 0;
+    width: 500px; /* Điều chỉnh chiều rộng để phù hợp với số cột */
+}
+
+.dropdown li {
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    text-align: center; /* Căn giữa văn bản trong mỗi mục */
+}
+
+.dropdown li:hover {
+    background-color: #555;
+}
+
+
+
+.bottom {
+    /* background-color: orange; */
+    width: 190vh;
+    height: 100vh;
+    margin-left: 60px;
+    margin-bottom: 0%;
+}
+
+.box-hot {
+    margin-bottom: 0%;
+    display: flex;
+}
+
+.hot-top {
+    /* border: 1px solid black; */
+    width: 180px;
+    height: 250px;
+    margin-left: 16px;
+    border-radius: 5%;
+}
+
+.img-hottop {
+    width: 180px;
+    height: 250px;
+    border-radius: 5%;
+}
+
+.hot-top p{
+    text-transform: capitalize;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    margin-top: 0%;
+}
+
+.box-middle {
+    margin-top: 0%;
+    display: flex;
+}
+
+.box-middle i{
+    color: white;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.box-details {
+    display: flex;
+    flex-wrap: wrap; /* Cho phép các phần tử xuống dòng */
+    gap: 10px; /* Khoảng cách giữa các box */
+    justify-content: space-between; /* Canh đều các phần tử */
+}
+
+.hot-top {
+    flex: 1 1 calc(16.66% - 10px); /* Mỗi box chiếm 1/6 chiều rộng trừ khoảng cách 10px */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 50px; /* Khoảng cách giữa các box */
+    padding: 10px;
+}
+
+.img-hottop {
+    width: 100%; /* Ảnh chiếm toàn bộ chiều rộng box */
+    height: auto; /* Giữ tỉ lệ ảnh */
+    object-fit: cover; /* Đảm bảo ảnh không bị méo */
+}
+
+p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333; /* Màu chữ để dễ nhìn */
+    word-wrap: break-word; /* Ngắt dòng nếu tiêu đề quá dài */
+}
